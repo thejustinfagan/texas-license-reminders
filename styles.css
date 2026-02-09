@@ -1,0 +1,503 @@
+/* Texas License Reminders - Styles */
+
+:root {
+    --primary: #1e40af;
+    --primary-dark: #1e3a8a;
+    --primary-light: #3b82f6;
+    --secondary: #f59e0b;
+    --success: #10b981;
+    --danger: #ef4444;
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
+    --white: #ffffff;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    line-height: 1.6;
+    color: var(--gray-800);
+    background: var(--white);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    padding: 80px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.badge {
+    display: inline-block;
+    background: var(--secondary);
+    color: var(--gray-900);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero .subtitle {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-bottom: 32px;
+    max-width: 500px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--secondary);
+    color: var(--gray-900);
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(245, 158, 11, 0.4);
+}
+
+.social-proof {
+    margin-top: 24px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Reminder Card Preview */
+.reminder-card {
+    background: var(--white);
+    color: var(--gray-800);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--shadow-lg);
+    max-width: 380px;
+    margin-left: auto;
+}
+
+.reminder-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.reminder-icon {
+    font-size: 32px;
+}
+
+.reminder-badge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.reminder-badge.urgent {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.reminder-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.reminder-card p {
+    color: var(--gray-600);
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.reminder-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-small {
+    background: var(--primary);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-link {
+    color: var(--primary);
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Stats Section */
+.stats {
+    background: var(--gray-50);
+    padding: 40px 0;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.stat-label {
+    color: var(--gray-600);
+    font-size: 14px;
+}
+
+/* Problem Section */
+.problem {
+    padding: 80px 0;
+}
+
+.problem h2, .how-it-works h2, .license-types h2, .signup h2, .faq h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 48px;
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.problem-card {
+    text-align: center;
+    padding: 32px;
+}
+
+.problem-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.problem-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.problem-card p {
+    color: var(--gray-600);
+}
+
+/* How It Works */
+.how-it-works {
+    background: var(--gray-50);
+    padding: 80px 0;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.step {
+    text-align: center;
+    position: relative;
+}
+
+.step-number {
+    width: 48px;
+    height: 48px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto 16px;
+}
+
+.step h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.step p {
+    color: var(--gray-600);
+    font-size: 14px;
+}
+
+/* License Types */
+.license-types {
+    padding: 80px 0;
+}
+
+.license-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.license-card {
+    background: var(--white);
+    border: 2px solid var(--gray-200);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+}
+
+.license-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.license-card h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.license-card ul {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.license-card li {
+    padding: 8px 0;
+    color: var(--gray-600);
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.license-card li:last-child {
+    border-bottom: none;
+}
+
+.license-stat {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.coming-soon {
+    text-align: center;
+    color: var(--gray-600);
+    margin-top: 32px;
+    font-style: italic;
+}
+
+/* Signup Section */
+.signup {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    padding: 80px 0;
+}
+
+.signup-box {
+    background: var(--white);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 48px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+}
+
+.signup-box h2 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.signup-box > p {
+    text-align: center;
+    color: var(--gray-600);
+    margin-bottom: 32px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--gray-200);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.submit-button {
+    width: 100%;
+    background: var(--primary);
+    color: var(--white);
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submit-button:hover {
+    background: var(--primary-dark);
+}
+
+.form-note {
+    text-align: center;
+    font-size: 12px;
+    color: var(--gray-600);
+    margin-top: 16px;
+}
+
+/* FAQ */
+.faq {
+    padding: 80px 0;
+    background: var(--gray-50);
+}
+
+.faq-list {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--white);
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow);
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.faq-item p {
+    color: var(--gray-600);
+}
+
+/* Footer */
+.footer {
+    background: var(--gray-900);
+    color: var(--gray-400);
+    padding: 40px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer p {
+    margin-bottom: 8px;
+}
+
+.copyright {
+    margin-top: 16px;
+    color: var(--gray-600);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .hero .subtitle {
+        margin: 0 auto 32px;
+    }
+    
+    .reminder-card {
+        margin: 40px auto 0;
+    }
+    
+    .stat-grid,
+    .problem-grid,
+    .steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .license-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 60px 0;
+        min-height: auto;
+    }
+    
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .signup-box {
+        padding: 32px 24px;
+    }
+}
